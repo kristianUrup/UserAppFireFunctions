@@ -24,7 +24,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\KristianUrup\Documents\GitHub\UserAppFireFunctions\user-app-functions\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\KristianUrup\Documents\GitHub\UserAppFireFunctions\functions\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,6 +39,8 @@
       <workItem from="1585509315760" duration="751000" />
       <workItem from="1585510252914" duration="2088000" />
       <workItem from="1585782873489" duration="1526000" />
+      <workItem from="1585826682672" duration="12000" />
+      <workItem from="1585950927983" duration="874000" />
     </task>
     <servers />
   </component>

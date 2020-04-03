@@ -16,17 +16,22 @@ admin.initializeApp();
 exports.uploadProductImage =
     functions.storage.object().onFinalize((object) => {
         return new Promise((resolve, reject) => {
-            const fileMeta = {
-                lastModified: 2222232,
-                name:'File2.png',
-                type: 'image/png',
-                size: 32093
-            }
-            if(object && object.metadata){
-                resolve(fileMeta);
-                //Firestore and save metadata
+
+            if(object && object.name && object.metadata){
+                const fileMeta = {
+                    lastModified: object.updated,
+                    name: object.metadata.name,
+                    type: 'image/png',
+                    size: object.size
+                };
+                const nameForDoc = object.name. split('/')[1];
+                admin.firestore().collection('files')
+                    .doc(nameForDoc)
+                    .set(fileMeta)
+                    .then(value => resolve(value))
+                    .catch(err => reject(err));
             } else {
-                reject('Error');
+                reject('Error happened, not enough data ');
             }
         });
     });
