@@ -32,5 +32,11 @@ exports.productUpdated = functions.firestore
         return defa.getProductController().updatedProduct(snap,context);
     });
 
+exports.createOrder = functions.firestore
+    .document('orders/{orderId}')
+    .onCreate((snap, context) => {
+        return defa.getOrderController().execute(snap,context);
+    });
+
 
 

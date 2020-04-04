@@ -10,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -30,8 +31,44 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/functions/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\KristianUrup\Documents\GitHub\UserAppFireFunctions\functions\node_modules\typescript\lib" />
+  </component>
+  <component name="RunManager" selected="Jest.ProductController.Init Test">
+    <configuration name="ProductController" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/functions/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/functions" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/functions/test/products/product.service.test.ts" />
+      <test-names>
+        <test-name value="ProductController" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductController.Init Test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/functions/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/functions" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/functions/test/products/product.service.test.ts" />
+      <test-names>
+        <test-name value="ProductController" />
+        <test-name value="Init Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.ProductController.Init Test" />
+        <item itemvalue="Jest.ProductController" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,7 +85,7 @@
       <workItem from="1585782873489" duration="1526000" />
       <workItem from="1585826682672" duration="12000" />
       <workItem from="1585950927983" duration="6116000" />
-      <workItem from="1585989446687" duration="11589000" />
+      <workItem from="1585989446687" duration="22932000" />
     </task>
     <servers />
   </component>
@@ -56,30 +93,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1586003507611">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1586018509909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586003507611" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586018509909" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585991451446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585991451446" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1585510067025">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1586015140196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585510067025" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1585510067025">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586015140196" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1586015140196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585510067025" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1585510067025">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586015140196" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1586015140196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585510067025" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1585510067025">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586015140196" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1586015140196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585510067025" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586015140196" />
     <state x="701" y="151" key="refactoring.ChangeSignatureDialog" timestamp="1586001117866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

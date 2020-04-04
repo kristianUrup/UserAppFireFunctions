@@ -1,11 +1,13 @@
 import {ProductRepository} from "./product.repository";
 import {Product} from "../models/product.model";
+import {StockRepository} from "../stock/stock.repository";
 
 export class ProductService {
-    constructor(private productRepository: ProductRepository) {
+    constructor(private productRepository: ProductRepository,
+                private stockRepository: StockRepository) {
     }
 
-    write(prodId: string,
+    writeProduct(prodId: string,
           productBefore: Product,
           productAfter: Product
     ): Promise<void> {
@@ -26,7 +28,7 @@ export class ProductService {
         }
     }
 
-    delete(prodId: string): Promise<void>{
+    deleteProduct(prodId: string): Promise<void>{
         return this.productRepository.deleteProduct(prodId);
     }
 
@@ -41,5 +43,10 @@ export class ProductService {
             type: productAfter.type,
             description: productAfter.description
         })
+    }
+
+    async create(product: Product): Promise<Product> {
+        await this.stockRepository.create(product, 5);
+        return Promise.resolve(product);
     }
 }

@@ -11,7 +11,7 @@ export class ProductControllerFirebase implements ProductController{
     writtenProduct(snap: Change<DocumentSnapshot>, context: EventContext): Promise<void> {
         const productBefore = snap.before.data() as Product;
         const productAfter = snap.after.data() as Product;
-        return this.productService.write(context.params.id, productBefore, productAfter)
+        return this.productService.writeProduct(context.params.id, productBefore, productAfter)
     }
 
     updatedProduct(snap: Change<DocumentSnapshot>, context: EventContext): Promise<void> {
