@@ -1,6 +1,6 @@
 import {ProductRepository} from "./product.repository";
-import * as admin from "firebase-admin";
 import {Product} from "../models/product.model";
+import * as admin from "firebase-admin";
 
 export class ProductRepositoryFirebase implements ProductRepository{
 

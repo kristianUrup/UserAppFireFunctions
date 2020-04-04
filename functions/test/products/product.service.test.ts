@@ -3,9 +3,11 @@ import {ProductRepository} from "../../src/product/product.repository";
 import {Product} from '../../src/models/product.model';
 import {ProductService} from "../../src/product/product.service";
 import {IMock, Mock, Times} from "moq.ts";
+import {StockRepository} from "../../src/stock/stock.repository";
 
 describe('ProductService', () => {
     let productRepository: IMock<ProductRepository>;
+    let stockRepository: IMock<StockRepository>;
     let productService: ProductService;
     const product: Product = {
         id: 'sssds',
@@ -23,7 +25,7 @@ describe('ProductService', () => {
             .returns(new Promise((resolve, reject) => {
                 resolve()
             }));
-        productService = new ProductService(productRepository.object());
+        productService = new ProductService(productRepository.object(), stockRepository.object());
     });
     it('Init Test', async () => {
         await productService.writeProduct(
